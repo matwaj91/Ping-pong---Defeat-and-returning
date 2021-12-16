@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 246
-  Top = 102
+  Left = 269
+  Top = 157
   Width = 959
   Height = 588
   Caption = 'Ping Pong'
@@ -26,8 +26,8 @@ object Form1: TForm1
     Brush.Color = clSilver
   end
   object ball: TImage
-    Left = 712
-    Top = 216
+    Left = 872
+    Top = 432
     Width = 32
     Height = 32
     AutoSize = True

@@ -84,6 +84,17 @@ void __fastcall TForm1::timerBallTimer(TObject *Sender)
    {
       ballVerticalOffset = -ballVerticalOffset;
    }
+   if(ball->Left <= leftRacket->Left + leftRacket->Width)
+   {
+      timerBall->Enabled = false;
+      ball->Visible = false;
+   }
+   else if (ball->Top > leftRacket->Top - ball->Height/2 &&
+            ball->Top < leftRacket->Top + leftRacket->Height &&
+            ball->Left >= leftRacket->Left + leftRacket->Width)
+   {
+      if(ballHorizontalOffset > 0) ballHorizontalOffset = -ballHorizontalOffset;
+   }
 
 }
 //---------------------------------------------------------------------------
