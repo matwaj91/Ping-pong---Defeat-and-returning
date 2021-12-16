@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 269
-  Top = 157
+  Left = 226
+  Top = 111
   Width = 959
   Height = 588
   Caption = 'Ping Pong'
